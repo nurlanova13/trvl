@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.preview{
+    height: 852px;
+    background: url('./assets/img/bg-preview.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 100px;
+}
+
+.preview__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview__title{
+    color: white;
+    font-size: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 250px 0 0 0;
+    letter-spacing: 50px;
+}
+
+.preview__subtitle{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin: 70px 0 0 0 ;
+}
+
+.travel{
+    width: 100%;
+    height: 740px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px 30px;
+}
+
+.travel__text{
+    width: 348px;
+}
+
+.travel__title{
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+}
+
+.travel__p{
+    font-size: 18px;
+    color: white;
+    margin: 30px 0 0 0;
+}
+
+.travel__gallery{
+    display: flex;
+    gap: 10px;
+}
+
+.travel__gallery_left{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.travel__gallery_right{
+
+}
+
+.subcribe{
+    height: 625px;
+    background: url('./assets/img/bg-subcribe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.subcribe__title{
+    font-size: 40px;
+    color: white;
+    margin: 150px 0 40px 0;
+}
+
+.subcribe__desc{
+    width: 721px;
+    text-align: center;  
+}
+
+.subcribe__email input{
+    margin: 20px 0;
+    width: 335px;
+    height: 66px;
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-bottom: 3px solid white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.subcribe__btn{
+    width: 335px;
+    height: 64px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer{
+    height: 89px;
+    width: 100%;
+    background: black;
+    padding: 30px 48px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__media{
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__support{
+    color: white;
+}
+
+@media screen and (max-width: 815px) {
+    .preview__title{
+       font-size: 60px;
+    }
+
+    .travel{
+        flex-direction: column;
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+
+    .travel__text{
+        width: 100%;
+    }
+
+    .travel__gallery{
+        margin: 50px 0 0 0;
+    }  
+}
+
+@media screen and (max-width: 340px) {
+    .preview{
+        padding: 20px 25px 0;
+        height: 650px;
+    }
+
+    .preview__header{
+        align-items: center;
+    }
+
+     .preview__title{
+        font-size: 40px;
+        letter-spacing:15px;
+     }
+
+     .preview__subtitle{
+        font-size: 18px;
+     }
+
+     .travel{
+        height: 100%;
+        padding: 20px 25px 40px 25px;
+     }
+    
+     .travel__title{
+        font-size: 28px;
+     }
+     .travel__p{
+        font-size: 16px;
+     }
+     .travel__gallery{
+        flex-direction: column;
+     }
+     .travel__gallery_left, .travel__gallery_right{
+        width: 100%;
+     }
+     .travel__gallery_left, .travel__gallery_right{
+        width: 100%;
+     }
+     .travel__gallery_right img{
+        width: 100%;
+     }
+
+     .subcribe{
+        padding: 20px 25px 0;
+        align-items: start;
+        height: 670px;
+     }
+
+     .subcribe__title{
+        font-size: 28px;                    
+     }
+
+     .subcribe__desc{
+        font-size: 16px;
+        width: auto;
+        text-align: left;
+     }
+     .subcribe__email input, .subcribe__btn{
+        width: 285px;
+     }
+    
+     .footer{
+        flex-direction: column;
+        height: 213px;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+}
+
+
+
